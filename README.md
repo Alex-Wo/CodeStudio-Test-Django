@@ -48,11 +48,14 @@
 
 ## Скриншоты:
 
---
-
+<img width="3044" height="3216" alt="127 0 0 1_8000_admin_index_index_1_change_" src="https://github.com/user-attachments/assets/df342285-ed44-478a-b7cc-552990de4838" />
 •••
-
---
-
-
-
+<img width="3044" height="3244" alt="127 0 0 1_8000_admin_product_product_5_change_" src="https://github.com/user-attachments/assets/5a3dd3a6-8074-4a72-9993-cf5626f5b4ff" />
+•••
+<img width="3044" height="1872" alt="127 0 0 1_8000_admin_index_feedback_" src="https://github.com/user-attachments/assets/b40a5092-3c01-4cc6-ad8d-d4a8ea45279c" />
+•••
+<img width="3044" height="1872" alt="127 0 0 1_8000_admin_index_feedback_10_change_" src="https://github.com/user-attachments/assets/850bcf7d-8295-488a-9a32-857638d9d7bb" />
+•••
+<img width="3044" height="4532" alt="127 0 0 1_8000_product_3_" src="https://github.com/user-attachments/assets/da2be902-a226-487d-b77c-f0e13c6bbc12" />
+•••
+<img width="3044" height="6256" alt="127 0 0 1_8000_ (1)" src="https://github.com/user-attachments/assets/b3842e79-de34-4866-8abf-2c33e8b85f3f" />
