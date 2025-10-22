@@ -1,0 +1,56 @@
+{% load custom_filters %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no, viewport-fit=cover">
+    <meta name="keywords" content="{{ indexes_seo.keywords }}">
+    <meta name="description" content="{{ indexes_seo.description }}">
+    <title>{{ indexes.title }}</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@400;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="static/assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="static/assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <h1>{{ indexes.title }}</h1>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    {% for slider in sliders %}
+                        <div class="swiper-slide"><img src="{{ slider.image.url }}" alt="{{ slider.alt }}"></div>
+                    {% endfor %}
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="intro-text">
+                <p>{{ indexes.text|linebreaks }}</p>
+            </div>
+            <div class="products-list">
+                <h2>Продукты</h2>
+                <ul>
+                    {% for product in products %}
+                        <li><a href="{% url 'product:product_page' product.id %}">{{ product.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div id="map" data-latitude="{{ locations.latitude|float_format }}" data-longitude="{{ locations.longitude|float_format }}"></div>
+            <h2>Отправить сообщение</h2>
+
+            <form method="post" action="{% url 'index:feedback' %}">
+                    {% csrf_token %}
+                <input type="text" name="name" placeholder="Ваше имя" class="text-box" id="name" name="name" maxlength="100" required>
+                <input type="email" name="email" placeholder="Электронная почта" class="text-box" id="email" name="email" maxlength="320" required>
+                <textarea name="message" cols="40" rows="10" placeholder="Сообщение" class="text-box" id="message" name="message" required></textarea>
+                <button type="submit" class="button">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=28ba27e6-8179-45dd-8a90-a542e1883e67" type="text/javascript"></script>
+	<script src="static/assets/js/swiper-bundle.min.js"></script>
+	<script src="static/assets/js/main.js"></script>
+</body>
+</html>

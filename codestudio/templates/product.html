@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no, viewport-fit=cover">
+	<meta name="keywords" content="{{ product_seo.keywords }}">
+	<meta name="description" content="{{ product_seo.description }}">
+    <title>{{ products.title }}</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@400;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <a href="/" class="go-back">На главную</a>
+                <h1>{{ products.title }}</h1>
+                <img src="{{ products.image.url }}" alt="{{ products.alt }}" class="product-image">
+            <div class="product-info">
+                {% for text_list in text_lists %}
+                    <div class="product-info-item">
+                        <h2>{{ text_list.title }}</h2>
+                        {% for point in text_list.points.all %}
+                        <ul>
+                            <li>{{ point.text }}</li>
+                        </ul>
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
