@@ -54,3 +54,7 @@
 <img width="3044" height="1872" alt="127 0 0 1_8000_admin_index_feedback_" src="https://github.com/user-attachments/assets/b40a5092-3c01-4cc6-ad8d-d4a8ea45279c" />
 •••
 <img width="3044" height="1872" alt="127 0 0 1_8000_admin_index_feedback_10_change_" src="https://github.com/user-attachments/assets/850bcf7d-8295-488a-9a32-857638d9d7bb" />
+•••
+<img width="3044" height="4532" alt="127 0 0 1_8000_product_3_" src="https://github.com/user-attachments/assets/da2be902-a226-487d-b77c-f0e13c6bbc12" />
+•••
+<img width="3044" height="6256" alt="127 0 0 1_8000_ (1)" src="https://github.com/user-attachments/assets/b3842e79-de34-4866-8abf-2c33e8b85f3f" />
